@@ -171,7 +171,7 @@ for (i in eye_dataid) {  # loop through all unique eye id
     mm = x %*% y 
     
     # linear regression
-    lm.result = summary(lm(age ~ mm))
+    lm.result = summary(lm(mm ~ age))
     pValue = lm.result$coefficients[2,4]
     slope = lm.result$coefficients[2,1]
     criticalPValue = criticalpvalue_var
