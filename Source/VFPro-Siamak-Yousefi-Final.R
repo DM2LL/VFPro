@@ -19,8 +19,7 @@
 
 
 rm(list=ls())
-path.2= "C:/Users/Siamak/Dropbox (UTHSC GGI)/Active Folder/R Programs/R-UTokyo-Japan/outputInputData/"  # Mac: "/Users/siamakyousefi/Documents/Siamak/R Programs on Mac/outputData/"
-load( paste0(path.2, "vfProDataforIvanMay24_2018.Rdata") )
+load( "vfProParameters.Rdata" )
 
 
 # libraries
@@ -67,7 +66,3 @@ if ( sum( eye.progressed.result, na.rm= TRUE ) >= 3 ){
   progressed.flag= 1
   print("Eye is progressed")
 }
-
-# saving data for Ivan
-# save( sample.data.ivan.1, sample.data.ivan.2, crit.p.value , gem.axes.ivan , file= paste0(path.2, "vfProDataforIvanMay24_2018.Rdata") )
-
